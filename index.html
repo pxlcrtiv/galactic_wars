@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter - HTML5 Canvas Game</title>
+    <link rel="stylesheet" href="./game/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Space Shooter</h1>
+        <div class="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div class="game-info">
+            <div class="score-container">
+                <p>Score: <span id="currentScore">0</span></p>
+                <p>High Score: <span id="highScore">0</span></p>
+            </div>
+            <button id="startButton">Start Game</button>
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <p>Use the Left/Right Arrow keys to move your spaceship</p>
+                <p>Press Spacebar to shoot and destroy enemy ships!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Load game scripts -->
+    <script src="./js/audio.js"></script>
+    <script src="./js/powerups.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html>
